@@ -1,0 +1,17 @@
+<!--Reutilizar el base.html-->
+{% extends "base.html" %}
+
+<!--Pone dentro del bloque titulo-->
+{% block titulo %} Fechas {% endblock %}
+
+<!--Pone dentro del bloque cuerpo-->
+{% block cuerpo %}
+<h1>Fechas</h1>
+<p>Esto es un ejemplo.</p>
+
+{% comment %} {{SON VARIABLES}} {% endcomment %}
+
+<p>Hoy es: {{hoy}}</p>
+<p>Quedan {{finMundo}} dias para que empiecen las practicas</p>
+<p>Mañana es: {{mañana}}</p>
+{% endblock %}

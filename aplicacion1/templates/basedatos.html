@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block titulo %} 
+    Ejemplo BBDD 
+{% endblock %}
+
+{% block cabecera %} 
+<link rel="stylesheet" href="{% static 'css/estilo.css' %}">
+{% endblock %}
+
+{% block cuerpo %}
+<h1>Nombre : {{ nombre }}</h1><br/>
+<h1>Ejercicio 1</h1>
+{% if usuarios %}
+    <div class="uso_libre">
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Apellido 1</th>
+                        <th>Apellido 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for usuario in usuarios %}
+                        <tr>
+                            <td>{{ usuario.id }}</td>
+                            <td>{{ usuario.nombre }}</td>
+                            <td>{{ usuario.apellido1 }}</td>
+                            <td>{{ usuario.apellido2 }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% else %}
+    <img src="{% static 'img/datos.png' %}" alt="Sin datos no hay paraíso."/>
+{% endif %}
+{% endblock %}

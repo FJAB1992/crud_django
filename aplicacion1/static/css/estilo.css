@@ -1,0 +1,39 @@
+body {
+    background-color: cornsilk;
+}
+
+.uso_libre {
+    text-align: center;
+    padding: 5%;
+    margin: 5%;
+    color: crimson;
+    font-family: 'SEGA';
+}
+
+@font-face {
+    font-family: "SEGA";
+    src: url("./SEGA.TTF");
+}
+
+.container {
+    box-shadow: 5px 5px 10px 5px #64037c;
+    border: solid 1px;
+    background-color: #dddddd;
+    width: 50%;
+    height: 30%;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 20px;
+}
+
+th, td {
+    border: 3px inset #03476F;
+    text-align: center;
+    background: #a81912;
+    color: #FFFFFF;
+    padding-top: 3px;
+    border-radius: 10px;
+}

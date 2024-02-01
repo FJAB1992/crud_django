@@ -1,0 +1,13 @@
+En el ejemplo visto en clase, se desarrolla una plantilla que muestra 
+el primer registro de una tabla que guarda nombre y apellidos. 
+
+Realiza en esa plantilla los siguientes cambios:
+
+Crea un código html que muestre un texto pasado por argumento.
+Incrusta en la plantilla el código html. Añade como argumento tu nombre.
+En lugar de mostrar un registro, se muestran todos. Introduce los 
+datos en celdas de tabla. 
+Si no hay datos, que aparezca una imagen. Por ejemplo, busca en Internet 
+"Sin datos no hay paraíso" y úsala en la plantilla. 
+Añade una hoja de estilos con alguna configuración básica al texto 
+Por ejemplo para establecer el tipo de letra y color.
