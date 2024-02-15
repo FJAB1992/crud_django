@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block cabecera %} 
+<link rel="stylesheet" href="{% static 'css/estilo.css' %}">
+{% endblock %}
+
+{% block cuerpo %}
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="Submit" value="Modificar" />
+        <a href="{% url 'aplicacion1:listado' %}"><input type="button" value="Cancelar"></a>
+    </form>
+{% endblock %}

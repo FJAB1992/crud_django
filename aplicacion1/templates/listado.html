@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load static %}
+
+{%  include "titulo.html" with Listado="Listado personas" %}
+
+
+{% block titulo %} 
+    Ejemplo BBDD 
+{% endblock %}
+
+{% block cabecera %} 
+<link rel="stylesheet" href="{% static 'css/estilo.css' %}">
+{% endblock %}
+
+{% block cuerpo %}
+<h1>CRUD</h1>
+{% comment %} En este caso, el objeto es la lista {% endcomment %}
+{% if object_list  %}
+    <div class="uso_libre">
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Apellido 1</th>
+                        <th>Apellido 2</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for usuario in object_list %}
+                        <tr>
+                            <td>{{ usuario.id }}</td>
+                            <td>{{ usuario.nombre }}</td>
+                            <td>{{ usuario.apellido1 }}</td>
+                            <td>{% if usuario.apellido2 %} {{ usuario.apellido2 }} {% endif %} </td>
+                            <td>
+                                <a href="{% url 'aplicacion1:detalle' pk=usuario.id %}">[Detalle]</a>
+                                <a href="{% url 'aplicacion1:actualizar' pk=usuario.id %}">[Actualizar]</a>
+                                <a href="{% url 'aplicacion1:borrar' pk=usuario.id %}">[Eliminar]</a> 
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% else %}
+    <img src="{% static 'img/datos.png' %}" alt="Sin datos no hay paraíso."/>
+{% endif %}
+<a href="{% url 'aplicacion1:nuevo' %}" style="text-decoration:none; font-size:24px; font-bold:bolder;"> Agregar  persona a la BD </a>
+{% endblock %}

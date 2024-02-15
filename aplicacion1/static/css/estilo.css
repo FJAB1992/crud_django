@@ -19,14 +19,18 @@ body {
     box-shadow: 5px 5px 10px 5px #64037c;
     border: solid 1px;
     background-color: #dddddd;
-    width: 50%;
-    height: 30%;
+    width: 100%;
+    height: 100%;
 }
 
 table{
     width: 100%;
     border-collapse: collapse;
     font-size: 20px;
+}
+
+th{
+    width: 40px;
 }
 
 th, td {

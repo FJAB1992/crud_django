@@ -59,8 +59,11 @@ python manage.py startapp nombre
   3. Resolver los warnings de migración
   ```bash
   python manage.py migrate
+  
+  python manage.py makemigrations
   ```
-
+  
+Nota:En caso de conflictos con la migración, eliminar carpeta migration y realizarla de nuevo. 
 
 ## Ejercicio 1 - Listado de nombres
 
@@ -72,3 +75,17 @@ Los ficheros del ejercicio se encuentran en la carpeta ejemplo
 
 
 OJO: recargar cache con: ctrl + shift +r (para  refrescar caché) o ctrl+ r (solo para actualizar)
+
+---------------------------------------------------------------------------------------
+Nota: desde el archivo pyvenv.cfg, configuramos desde donde se usa python
+---------------------------------------------------------------------------------------
+
+## Configuración de Admin
+
+```python manage.py createsuperuser
+```
+
+USER: admin
+Password: delorian
+
+

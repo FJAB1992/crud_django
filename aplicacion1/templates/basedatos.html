@@ -1,6 +1,9 @@
 {% extends "base.html" %}
 {% load static %}
 
+{%  include "titulo.html" with Listado="Listado personas" %}
+
+
 {% block titulo %} 
     Ejemplo BBDD 
 {% endblock %}
@@ -30,7 +33,7 @@
                             <td>{{ usuario.id }}</td>
                             <td>{{ usuario.nombre }}</td>
                             <td>{{ usuario.apellido1 }}</td>
-                            <td>{{ usuario.apellido2 }}</td>
+                            <td>{% if usuario.apellido2 %} {{ usuario.apellido2 }} {% endif %} </td>
                         </tr>
                     {% endfor %}
                 </tbody>

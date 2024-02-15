@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block cabecera %} 
+<link rel="stylesheet" href="{% static 'css/estilo.css' %}">
+{% endblock %}
+
+{% block cuerpo %}
+    <form method="POST">
+        {% csrf_token %}
+        {% comment %} Como parrafo, como tabla o como div (as_p, as_table, as_div) {% endcomment %}
+        {{ form.as_p }}
+        <input type="Submit" value="Aceptar" />
+    </form>
+{% endblock %}

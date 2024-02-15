@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block cabecera %} 
+<link rel="stylesheet" href="{% static 'css/estilo.css' %}">
+{% endblock %}
+
+{% block cuerpo %}
+<div>
+    <h1>Detalles</h1>
+    {{object.id}} - {{object.nombre}} - {{object.apellido1}} - {{object.apellido2}}
+</div>
+<br/>
+<br/>
+<hr>
+<a href="{% url 'aplicacion1:listado' %}" style="text-decoration:none; font-size:24px; font-bold:bolder;"> Volver al listado </a>
+{% endblock %}

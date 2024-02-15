@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block cabecera %} 
+<link rel="stylesheet" href="{% static 'css/estilo.css' %}">
+{% endblock %}
+
+{% block cuerpo %}
+    <form method="POST">
+        {% csrf_token %}
+        <p>{{ saludo }}</p>
+        {% for p in personas%}
+        <p>{{ p.nombre }} - {{ p.apellido1 }} - {{ p.apellido2 }}</p>
+        {% endfor %}
+        <p>¿Desea eliminar a '{{ object.nombre }}'?</p>
+        <input type="Submit" value="Borrar" />
+        <a href="{% url 'aplicacion1:listado' %}" ><input type="button" value="Cancelar"></a>
+    </form>
+{% endblock %}
