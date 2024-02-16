@@ -37,6 +37,8 @@ python manage.py startapp nombre
 
 ## Base de datos
 
+# Modificar en settings.py, base de datos
+
   1. Instalar cliente de Mysql
   ```bash
   pip install mysqlclient
@@ -63,7 +65,7 @@ python manage.py startapp nombre
   python manage.py makemigrations
   ```
   
-Nota:En caso de conflictos con la migración, eliminar carpeta migration y realizarla de nuevo. 
+### Nota:En caso de conflictos con la migración, eliminar carpeta migration y realizarla de nuevo. 
 
 ## Ejercicio 1 - Listado de nombres
 
@@ -74,7 +76,7 @@ Nota:En caso de conflictos con la migración, eliminar carpeta migration y reali
 Los ficheros del ejercicio se encuentran en la carpeta ejemplo
 
 
-OJO: recargar cache con: ctrl + shift +r (para  refrescar caché) o ctrl+ r (solo para actualizar)
+### OJO: recargar cache con: ctrl + shift +r (para  refrescar caché) o ctrl+ r (solo para actualizar)
 
 ---------------------------------------------------------------------------------------
 Nota: desde el archivo pyvenv.cfg, configuramos desde donde se usa python
