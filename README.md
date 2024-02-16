@@ -19,9 +19,12 @@
   pip install Django
   ```
 
- 5. Crear proyecto de Django ```django-admin startproject nombre_proyecto```
+ 5. Crear proyecto de Django ```django-admin startproject nombre_proyecto .```
+
+### . No creará doble carpeta
+
   ```bash
-  django-admin startproject nombre_proyecto
+  django-admin startproject nombre_proyecto .
   ``` 
 
   6. Ejecutar el proyecto Django
