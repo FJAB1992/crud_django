@@ -2,9 +2,9 @@
 
 ## Preparación del entorno
 
-  1. Crear un entorno virtual ``` python –m venv nombre_carpeta```
+  1. Crear un entorno virtual ``` python –m venv nombre_entorno```
   ```bash
-  python –m venv nombre_carpeta
+  python –m venv nombre_entorno
   ```
 
   2. Abrir el proyecto
