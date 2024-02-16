@@ -84,7 +84,8 @@ Nota: desde el archivo pyvenv.cfg, configuramos desde donde se usa python
 
 ## Configuración de Admin
 
-```python manage.py createsuperuser
+```bash
+python manage.py createsuperuser
 ```
 
 USER: admin
