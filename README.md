@@ -67,7 +67,10 @@ python manage.py startapp nombre
   
   python manage.py makemigrations
   ```
-  
+
+Será necesario añadir los path de la aplicación (creados en esta), e incluirlos en el path del proyecto
+
+
 ### Nota:En caso de conflictos con la migración, eliminar carpeta migration y realizarla de nuevo. 
 
 ## Ejercicio 1 - Listado de nombres
