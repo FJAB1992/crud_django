@@ -1,17 +1,1 @@
-1-URL de la aplicacion nombre de referencia para nueva vista
-2-URLS del proyecto, añadirle los paths
-3-en modelos crear los modelos correspondientes
 
-
-Arrancar serv:
-
-path\Script\activate
-
-Levantar servidor:
-python manage.py runserver
-
-Migrar tablas django:
-python manage.py migrate
-
-Instalar mysql en django:
-pip install mysqlclient
