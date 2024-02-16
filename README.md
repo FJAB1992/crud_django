@@ -37,7 +37,7 @@ python manage.py startapp nombre
 
 ## Base de datos
 
-# Modificar en settings.py, base de datos
+### Modificar en settings.py, base de datos
 
   1. Instalar cliente de Mysql
   ```bash
