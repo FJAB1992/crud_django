@@ -97,4 +97,16 @@ python manage.py createsuperuser
 USER: admin
 Password: delorian
 
+# Adicional
+Sacar en terminal en models.py los modelos de las tablas, junto con este aviso sobre cómo usarlo: 
 
+```python manage.py inspectdb```
+
+
+Este es un módulo de modelos autogenerado de Django.
+Tendrás que hacer lo siguiente MANUALMENTE para dejarlo limpio:
+* Reordenar el orden de los modelos.
+* Asegurarte de que cada modelo tiene un campo con primary_key=True
+* Asegurarte de que cada ForeignKey y OneToOneField tiene `on_delete` ajustado al comportamiento que desees
+* Eliminar las líneas con  `managed=False` si quieres dejar que Django cree, modifique y borre la tabla
+* Renombra los modelos como gustes, pero NO renombres los valores de db_table o los campos de las tablas.
