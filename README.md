@@ -102,6 +102,8 @@ Sacar en terminal en models.py los modelos de las tablas, junto con este aviso s
 
 ```python manage.py inspectdb```
 
+Ejemplo de filtrado:
+```python manage.py inspectdb municipios provincias > models.py```
 
 Este es un módulo de modelos autogenerado de Django.
 Tendrás que hacer lo siguiente MANUALMENTE para dejarlo limpio:
